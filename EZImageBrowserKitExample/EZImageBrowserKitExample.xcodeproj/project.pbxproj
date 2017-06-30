@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		985454D75F84E46DDFC65583 /* Pods_EZImageBrowserKitExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56183537DA37582EC0DB101E /* Pods_EZImageBrowserKitExample.framework */; };
 		A62466AC1F0676A1004CB346 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62466AB1F0676A1004CB346 /* main.m */; };
 		A62466AF1F0676A1004CB346 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A62466AE1F0676A1004CB346 /* AppDelegate.m */; };
 		A62466B21F0676A1004CB346 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62466B11F0676A1004CB346 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56183537DA37582EC0DB101E /* Pods_EZImageBrowserKitExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EZImageBrowserKitExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62466A71F0676A1004CB346 /* EZImageBrowserKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EZImageBrowserKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62466AB1F0676A1004CB346 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A62466AD1F0676A1004CB346 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		A62466B61F0676A1004CB346 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A62466B91F0676A1004CB346 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A62466BB1F0676A1004CB346 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9A3618F903A4B58FF73E646 /* Pods-EZImageBrowserKitExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZImageBrowserKitExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample.debug.xcconfig"; sourceTree = "<group>"; };
+		F7DBB1D8844D5641738043AE /* Pods-EZImageBrowserKitExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EZImageBrowserKitExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				985454D75F84E46DDFC65583 /* Pods_EZImageBrowserKitExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58831AAC51EDCCAE879D2D1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9A3618F903A4B58FF73E646 /* Pods-EZImageBrowserKitExample.debug.xcconfig */,
+				F7DBB1D8844D5641738043AE /* Pods-EZImageBrowserKitExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A624669E1F0676A1004CB346 = {
 			isa = PBXGroup;
 			children = (
 				A62466A91F0676A1004CB346 /* EZImageBrowserKitExample */,
 				A62466A81F0676A1004CB346 /* Products */,
+				58831AAC51EDCCAE879D2D1E /* Pods */,
+				CE310320E1D8E781E6751780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CE310320E1D8E781E6751780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56183537DA37582EC0DB101E /* Pods_EZImageBrowserKitExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A62466BE1F0676A1004CB346 /* Build configuration list for PBXNativeTarget "EZImageBrowserKitExample" */;
 			buildPhases = (
+				A665999D2258E553E665F99D /* [CP] Check Pods Manifest.lock */,
 				A62466A31F0676A1004CB346 /* Sources */,
 				A62466A41F0676A1004CB346 /* Frameworks */,
 				A62466A51F0676A1004CB346 /* Resources */,
+				C1834DDFC076CB5CB009A862 /* [CP] Embed Pods Frameworks */,
+				16F58BB1BB95BF3E0D1FBB34 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16F58BB1BB95BF3E0D1FBB34 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A665999D2258E553E665F99D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1834DDFC076CB5CB009A862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A62466A31F0676A1004CB346 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		A62466BF1F0676A1004CB346 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9A3618F903A4B58FF73E646 /* Pods-EZImageBrowserKitExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EZImageBrowserKitExample/Info.plist;
@@ -283,6 +359,7 @@
 		};
 		A62466C01F0676A1004CB346 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7DBB1D8844D5641738043AE /* Pods-EZImageBrowserKitExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = EZImageBrowserKitExample/Info.plist;
