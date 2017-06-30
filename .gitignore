@@ -61,3 +61,101 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+EZImageBrowserKitExample/Pods/Manifest.lock
+
+EZImageBrowserKitExample/Pods/Pods.xcodeproj/project.pbxproj
+
+EZImageBrowserKitExample/Pods/SDWebImage/LICENSE
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/SDWebImage.xcconfig
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/SDWebImage-prefix.pch
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/Info.plist
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/SDWebImage-dummy.m
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample.modulemap
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-umbrella.h
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-resources.sh
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-frameworks.sh
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-dummy.m
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-acknowledgements.plist
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample-acknowledgements.markdown
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Info.plist
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIView+WebCacheOperation.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImageView+WebCache.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImageView+HighlightedWebCache.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.m
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample.release.xcconfig
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImage+MultiFormat.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImage+GIF.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIButton+WebCache.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIButton+WebCache.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImagePrefetcher.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/UIImage+GIF.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageOperation.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageManager.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageManager.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDownloaderOperation.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDownloader.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageCompat.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageDecoder.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDWebImageCompat.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/README.md
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.h
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/NSData+ImageContentType.m
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDImageCache.m
+
+EZImageBrowserKitExample/Pods/Target Support Files/SDWebImage/SDWebImage.modulemap
+
+EZImageBrowserKitExample/Pods/Target Support Files/Pods-EZImageBrowserKitExample/Pods-EZImageBrowserKitExample.debug.xcconfig
+
+EZImageBrowserKitExample/Pods/SDWebImage/SDWebImage/SDImageCache.h
