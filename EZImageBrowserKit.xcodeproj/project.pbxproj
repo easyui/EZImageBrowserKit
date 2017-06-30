@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A668006A1F066B5A00C25D6A /* EZImageBrowserKit.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800681F066B5A00C25D6A /* EZImageBrowserKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A66800761F066B8A00C25D6A /* EZImageBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800701F066B8A00C25D6A /* EZImageBrowser.h */; };
+		A66800761F066B8A00C25D6A /* EZImageBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800701F066B8A00C25D6A /* EZImageBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A66800771F066B8A00C25D6A /* EZImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = A66800711F066B8A00C25D6A /* EZImageBrowser.m */; };
-		A66800781F066B8A00C25D6A /* EZImageBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800721F066B8A00C25D6A /* EZImageBrowserCell.h */; };
+		A66800781F066B8A00C25D6A /* EZImageBrowserCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800721F066B8A00C25D6A /* EZImageBrowserCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A66800791F066B8A00C25D6A /* EZImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66800731F066B8A00C25D6A /* EZImageBrowserCell.m */; };
-		A668007A1F066B8A00C25D6A /* EZImageBrowserLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800741F066B8A00C25D6A /* EZImageBrowserLoading.h */; };
+		A668007A1F066B8A00C25D6A /* EZImageBrowserLoading.h in Headers */ = {isa = PBXBuildFile; fileRef = A66800741F066B8A00C25D6A /* EZImageBrowserLoading.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A668007B1F066B8A00C25D6A /* EZImageBrowserLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = A66800751F066B8A00C25D6A /* EZImageBrowserLoading.m */; };
 /* End PBXBuildFile section */
 
@@ -314,6 +314,7 @@
 				A668006F1F066B5A00C25D6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

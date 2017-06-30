@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "EZLocalImageTableViewController.h"
 
 @interface ViewController ()
 
@@ -23,6 +24,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"custom"]) {
+        EZLocalImageTableViewController *receive = segue.destinationViewController;
+        receive.type = @"custom";
+    }else if ([segue.identifier isEqualToString:@"customXib"]) {
+        EZLocalImageTableViewController *receive = segue.destinationViewController;
+        receive.type = @"customXib";
+    }
 }
 
 

@@ -50,7 +50,6 @@
 }
 
 -(void)dealloc{
-    NSLog(@"sssssssssss");
 }
 
 
