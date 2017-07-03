@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  page text 位置
-
+ 
  - EZImageBrowserPageTextPositionTop: 上边 x = center，y = to top 20
  - EZImageBrowserPageTextPositionBottom: 下边 x = center，y = to bottm 20
  */
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSInteger, EZImageBrowserPageTextPosition) {
 
 /**
  图片浏览器将显示的回调
-
+ 
  @param imageBrowser 图片浏览器
  */
 - (void)imageBrowserWillAppear:(EZImageBrowser *)imageBrowser;

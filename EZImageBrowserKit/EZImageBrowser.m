@@ -90,6 +90,12 @@
             // 设置右边
             [self __cellForIndex:_currentIndex + 1 ];
         }
+        
+        if ([self.delegate respondsToSelector:@selector(imageBrowser:didDisplayingCell:atIndex:)]) {
+            EZImageBrowserCell *currentCell = [[self.cells filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index == %d", self.currentIndex]] firstObject];
+            [self.delegate imageBrowser:self didDisplayingCell: currentCell atIndex: self.currentIndex];
+        }
+        
         if (completion) {
             completion();
         }
@@ -105,7 +111,7 @@
     }
     // 取到当前显示的 cell
     EZImageBrowserCell *cell = [[self.cells filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index == %d", _currentIndex]] firstObject];
-
+    
     CGFloat x = [UIScreen mainScreen].bounds.size.width * 0.5;
     CGFloat y = [UIScreen mainScreen].bounds.size.height * 0.5;
     CGRect rect = CGRectMake(x, y, 0, 0);
@@ -126,7 +132,7 @@
                     [self.delegate imageBrowserDidDisappear:self];
                 }
             }];
-
+            
             return;
         }
     }
@@ -150,7 +156,7 @@
 
 - (nullable __kindof EZImageBrowserCell *)dequeueReusableCell{
     if (self.readyToUseCells.count > 0) {
-       EZImageBrowserCell * view = [self.readyToUseCells firstObject];
+        EZImageBrowserCell * view = [self.readyToUseCells firstObject];
         [self.readyToUseCells removeObjectAtIndex:0];
         return view;
     }
@@ -328,7 +334,7 @@
     }else{
         cell.imageViewSize =  CGSizeMake(1, 1);//给个默认值吧，设置imageViewSize，在set方法里会根据(1, 1)计算出正方形大小
     }
-
+    
     return cell;
 }
 
