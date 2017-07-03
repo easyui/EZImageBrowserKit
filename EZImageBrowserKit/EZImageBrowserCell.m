@@ -176,8 +176,8 @@
     if (imageSize.height < [UIScreen mainScreen].bounds.size.height) {
         y = ([UIScreen mainScreen].bounds.size.height - imageSize.height) / 2;
     }else{
-    
-    
+        
+        
     }
     return CGRectMake(x, y, imageSize.width, imageSize.height);
 }
@@ -223,12 +223,12 @@
 
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-//    NSLog(@"scrollView.contentOffset %@" ,NSStringFromCGPoint(scrollView.contentOffset));
-//    NSLog(@"image %@" ,NSStringFromCGRect(self.imageView.frame));
-
+    //    NSLog(@"scrollView.contentOffset %@" ,NSStringFromCGPoint(scrollView.contentOffset));
+    //    NSLog(@"image %@" ,NSStringFromCGRect(self.imageView.frame));
+    
     // 保存 offsetY ,动画做准备
     self.offsetY = scrollView.contentOffset.y;
-   
+    
     self.lastContentOffset = scrollView.contentOffset;
     // 正在动画
     if ([self.imageView.layer animationForKey:@"transform"] != nil) {
@@ -247,7 +247,7 @@
         }
     }
     /*
-    下面是contentSize滚动到上下超过边界值
+     下面是contentSize滚动到上下超过边界值
      */
     
     self.scale = fabs(self.lastContentOffset.y) / screenH;
@@ -261,7 +261,7 @@
     }
     
     [_cellDelegate cell:self scale:_scale];
-
+    
     
     // 如果用户松手
     if (scrollView.dragging == false) {

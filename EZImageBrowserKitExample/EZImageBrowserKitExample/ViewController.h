@@ -2,7 +2,7 @@
 //  ViewController.h
 //  EZImageBrowserKitExample
 //
-//  Created by IQIYI on 2017/6/30.
+//  Created by Zhu yangjun on 2017/6/30.
 //  Copyright © 2017年 Zhu yangjun. All rights reserved.
 //
 

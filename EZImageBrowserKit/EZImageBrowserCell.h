@@ -17,14 +17,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  contentSize滚动到上下超过边界值后超过scale的回调
-
+ 
  @param cell cell对象
  */
 - (void)cellTouchOff:(EZImageBrowserCell *)cell;
 
 /**
  contentSize滚动到上下超过边界值的回调
-
+ 
  @param cell cell对象
  @param scale 超过的比例
  */
@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  动画消失：扩大&透明
-
+ 
  @param animationBlock 附带的动画信息
  @param completionBlock  结束的回调
  */
@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  动画消失：向上或向下滑出
-
+ 
  @param animationBlock 附带的动画信息
  @param completionBlock 结束的回调
  */
@@ -84,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  放大缩小
-
+ 
  @param scale 超过的比例
  @param center 中心位置
  @return 缩放的大小
