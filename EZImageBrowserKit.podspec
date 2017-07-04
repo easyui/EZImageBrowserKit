@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "EZImageBrowserKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "EZImageBrowser is a light weight image browser, like the wechat, weibo, qq zome image viewer. Same use as UITableView"
 
   # This description is used to generate tags and improve search results.
