@@ -25,6 +25,9 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 /// 长按手势
 @property (nullable, nonatomic, strong) UILongPressGestureRecognizer *longPressGestureRecognizer;
+/// 单击手势
+@property (nonatomic, strong) UITapGestureRecognizer *singleTapGes;
+
 
 
 @end
@@ -184,12 +187,13 @@
     if ([self.delegate respondsToSelector:@selector(imageBrowser:didDoubleClickCellAtIndex:)]) {
         [self.delegate imageBrowser:self didDoubleClickCellAtIndex:self.currentIndex];
     }else{
-        CGFloat newScale = 2;
         EZImageBrowserCell *cell = [[self.cells filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"index == %d", _currentIndex]] firstObject];
         if (cell.zoomScale != 1) {
-            newScale = 1;
+            [cell setZoomScale:1 animated:YES];
+            return;
         }
-        CGRect zoomRect = [cell zoomRectForScale:newScale withCenter:[ges locationInView:ges.view]];
+        CGFloat newScale = 2;
+        CGRect zoomRect = [cell zoomRectForScale:newScale withCenter:[ges locationInView:cell]];
         [cell zoomToRect:zoomRect animated:YES];
     }
     
@@ -209,6 +213,7 @@
     if (_supportLongPress) {
         self.longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGesAction:)];
         [self addGestureRecognizer:self.longPressGestureRecognizer];
+        [self.singleTapGes requireGestureRecognizerToFail:self.longPressGestureRecognizer];
     }
 }
 
@@ -285,6 +290,7 @@
     UITapGestureRecognizer *singleTapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(singleTapGesAction:)];
     singleTapGes.numberOfTapsRequired = 1;
     [self addGestureRecognizer:singleTapGes];
+    self.singleTapGes = singleTapGes;
     
     UITapGestureRecognizer *doubleTapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(doubleTapGesAction:)];
     doubleTapGes.numberOfTapsRequired = 2;

@@ -131,6 +131,8 @@
 
 
 - (CGRect)zoomRectForScale:(float)scale withCenter:(CGPoint)center{
+//    center = [self.superview convertPoint:center toView:self.imageView];
+
     CGRect zoomRect;
     zoomRect.size.height =self.frame.size.height / scale;
     zoomRect.size.width  =self.frame.size.width  / scale;
