@@ -74,12 +74,12 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell =   [tableView cellForRowAtIndexPath:indexPath];
+//    UITableViewCell *cell =   [tableView cellForRowAtIndexPath:indexPath];
     if ([self.type isEqualToString:@"custom"]) {
         EZCustomImageBrowser *browser = [[EZCustomImageBrowser alloc] init];
         browser.pageTextPosition = EZImageBrowserPageTextPositionTop;
         [browser setDelegate:self];
-        [browser showFromView:cell currentIndex:indexPath.row completion:nil];
+        [browser showWithCurrentIndex:indexPath.row completion:nil];
     }else if ([self.type isEqualToString:@"customXib"]) {
         EZCustomXibImageBrowser *browser = [[UINib nibWithNibName:@"EZCustomXibImageBrowser" bundle:nil] instantiateWithOwner:nil options:nil][0];
         
@@ -87,11 +87,11 @@
         browser.pageControl.currentPage = indexPath.row;
 
         [browser setDelegate:self];
-        [browser showFromView:cell currentIndex:indexPath.row completion:nil];
+        [browser showWithCurrentIndex:indexPath.row completion:nil];
     }else{
     EZImageBrowser *browser = [[EZImageBrowser alloc] init];
     [browser setDelegate:self];
-    [browser showFromView:cell currentIndex:indexPath.row completion:nil];
+    [browser showWithCurrentIndex:indexPath.row completion:nil];
     }
 }
 

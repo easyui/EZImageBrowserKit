@@ -161,10 +161,9 @@ typedef NS_ENUM(NSInteger, EZImageBrowserPageTextPosition) {
 /**
  显示图片浏览器，显示前，必须先设置delegate，否则crash
  
- @param fromView     clicked view
  @param currentIndex current cell index
  */
-- (void)showFromView:(UIView *)fromView currentIndex:(NSInteger)currentIndex completion:(void (^ __nullable)(void))completion;
+- (void)showWithCurrentIndex:(NSInteger)currentIndex completion:(void (^ __nullable)(void))completion;
 
 
 /**

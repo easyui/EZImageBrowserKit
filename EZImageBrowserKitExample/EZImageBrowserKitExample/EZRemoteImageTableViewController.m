@@ -94,10 +94,10 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell =   [tableView cellForRowAtIndexPath:indexPath];
+//    UITableViewCell *cell =   [tableView cellForRowAtIndexPath:indexPath];
     EZImageBrowser *browser = [[EZImageBrowser alloc] init];
     [browser setDelegate:self];
-    [browser showFromView:cell currentIndex:indexPath.row  completion:nil];
+    [browser showWithCurrentIndex:indexPath.row  completion:nil];
     
 }
 

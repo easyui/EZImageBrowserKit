@@ -57,7 +57,7 @@
 
 
 #pragma mark - public
-- (void)showFromView:(UIView *)fromView currentIndex:(NSInteger)currentIndex completion:(void (^ __nullable)(void))completion {
+- (void)showWithCurrentIndex:(NSInteger)currentIndex completion:(void (^ __nullable)(void))completion {
     
     NSAssert(self.delegate != nil, @"Please set up delegate for EZImageBrowser");
     
@@ -75,7 +75,13 @@
     // 设置第1个 view 的位置以及大小
     EZImageBrowserCell *cell = [self __cellForIndex:_currentIndex];
     // 获取来源图片在屏幕上的位置
-    CGRect rect = [fromView convertRect:fromView.bounds toView:nil];
+    CGRect rect = CGRectMake( [UIScreen mainScreen].bounds.size.width/2,  [UIScreen mainScreen].bounds.size.height/2, 0, 0);
+    if ([self.delegate respondsToSelector:@selector(imageBrowser:fromViewForItemAtIndex:)]) {
+        UIView *startView = [self.delegate imageBrowser:self fromViewForItemAtIndex:_currentIndex];
+        if (startView) {
+             rect = [startView convertRect:startView.bounds toView:nil];
+        }
+    }
     if ([self.delegate respondsToSelector:@selector(imageBrowserWillAppear:)]) {
         [self.delegate imageBrowserWillAppear:self];
     }
