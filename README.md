@@ -75,7 +75,7 @@
 ```
   EZImageBrowser *browser = [[EZImageBrowser alloc] init];
     [browser setDelegate:self];
-    [browser showFromView:cell currentIndex:indexPath.row completion:nil];
+    [browser showWithCurrentIndex:indexPath.row completion:nil];
 ```
 
 - 图片浏览器支持配置属性
