@@ -64,7 +64,7 @@ typedef NS_ENUM(NSInteger, EZImageBrowserPageTextPosition) {
 - (void)imageBrowser:(EZImageBrowser *)imageBrowser didDisplayingCell:(EZImageBrowserCell *)cell atIndex:(NSInteger)index;
 
 /**
- 获取对应cell原空间的回调，dimmiss的时候可以动画返回对应位置
+ 获取对应cell原空间的回调，显示的时候，如果返回非空就从原空间动画显示，否则从中间显示出来；dimmiss的时候如果返回非空则可以返回原空间位置，为空的话则变大消失，上下滑出的话就继续滑动消失
  
  @param imageBrowser 图片浏览器
  @param index 当前cell索引
