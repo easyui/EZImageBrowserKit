@@ -252,7 +252,7 @@
             self.pageTextLabel.center = CGPointMake(self.bounds.size.width * 0.5,  [UIApplication sharedApplication].statusBarFrame.size.height + 20);
             break;
         case EZImageBrowserPageTextPositionBottom:
-            self.pageTextLabel.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height - 20);
+            self.pageTextLabel.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height - 20 - ([self isPhoneX] ? 34 : 0));
             break;
         default:
             break;
@@ -378,7 +378,10 @@
             [self.delegate imageBrowser:self didDisplayingCell: currentCell atIndex: self.currentIndex];
         }
     }
-    
+}
+
+- (BOOL)isPhoneX{
+    return ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO);
 }
 
 #pragma mark - EZImageBrowserDelegate
