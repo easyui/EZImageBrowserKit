@@ -367,6 +367,10 @@
     [self.cells removeObjectsInArray:tempArray];
 }
 
+- (BOOL)isPhoneX{
+    return ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO);
+}
+
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     NSUInteger page = (scrollView.contentOffset.x / scrollView.frame.size.width + 0.5);
@@ -378,10 +382,6 @@
             [self.delegate imageBrowser:self didDisplayingCell: currentCell atIndex: self.currentIndex];
         }
     }
-}
-
-- (BOOL)isPhoneX{
-    return ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO);
 }
 
 #pragma mark - EZImageBrowserDelegate
